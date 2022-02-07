@@ -1,0 +1,20 @@
+{
+  "name": "crud-ejs-juan-kisbayu-avinska",
+  "version": "1.0.0",
+  "description": "Tugas CRUD EJS Team 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan, Kisbayu, Avinska",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.1.6",
+    "epress": "^0.0.1-security",
+    "express": "^4.17.2",
+    "method-override": "^3.0.0",
+    "uuid": "^8.3.2"
+  }
+}

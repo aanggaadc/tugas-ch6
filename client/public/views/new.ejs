@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('partial/head') %>
+	<body>
+		<!-- Start Navbar -->
+		<%- include('partial/navbar') %>
+		<!-- End Navbar -->
+
+		<!-- Start Main -->
+		<section class="main text-center">
+			<div class="container-fluid">
+				<h1 class="m-3 user__main-title"><%= bodyTitle %></h1>
+				<main class="form-signin">
+					<form action="/user" method="POST">
+						<div class="form-floating">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+							<label for="floatingInput">Name</label>
+						</div>
+						<div class="form-floating">
+							<input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" />
+							<label for="floatingInput">Email address</label>
+						</div>
+						<div class="form-floating">
+							<input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+							<label for="floatingPassword">Password</label>
+						</div>
+						<button class="btn btn-submit mb-2 mt-2 text-center">Submit</button>
+					</form>
+					<a href="/user" class="btn btn-back mb-2 mt-2 text-center">Back</a>
+				</main>
+			</div>
+		</section>
+
+		<%- include('partial/footer') %>
+	</body>
+</html>
